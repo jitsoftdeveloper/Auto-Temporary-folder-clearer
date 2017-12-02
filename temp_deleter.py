@@ -2,15 +2,14 @@ import shutil
 import datetime
 from time import sleep
 
-path = 'C:\\Users\\Jitender\\AppData\\Local\\Temp'
-#path = 'C:/Users/Jitender/Desktop/rm/jj'
+path = 'C:/Users/user_name/AppData/Local/Temp'
 
 while True:
     current_time = datetime.datetime.now()
     print(current_time)
-    if current_time.hour == 17:
+    if current_time.hour == 10:
         shutil.rmtree(path)
-        print('Time Matched')
+        print('Temporary Files Deleted Successfully!')
         break
     else:
         sleep(60)
